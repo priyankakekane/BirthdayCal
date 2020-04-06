@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Birthday Cal</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600,400,300|Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/task.css">
+  </head>
+  <body onload="getinitialCalender()">
+    <div class="app">
+
+      <h1 class="app__header">Birthday Cal &ndash; Work Area</h1>
+
+      <div class="app__content">
+
+        <div id="work-area">
+
+          <div class="calendar-container" id="calContainer" style="display:flex;align-items:flex-start;justify-content:space-evenly;">
+             
+          </div>
+
+          <div class="app__inputs">
+            <textarea class="app__txt js-json" id="json-input" placeholder="Paste the json here.">
+            [{
+            "name": "Tyrion Lannister",
+            "birthday": "12/02/1978"
+            }, {
+            "name": "Cersei Lannister",
+            "birthday": "11/30/1975"
+            }, {
+            "name": "Daenerys Targaryen",
+            "birthday": "11/24/1991"
+            }, {
+            "name": "Arya Stark",
+            "birthday": "11/25/1996"
+            }, {
+            "name": "Jon Snow",
+            "birthday": "12/03/1989"
+            }, {
+            "name": "Sansa Stark",
+            "birthday": "08/15/1992"
+            }, {
+            "name": "Jorah Mormont",
+            "birthday": "12/16/1968"
+            }, {
+            "name": "Jaime Lannister",
+            "birthday": "12/06/1975"
+            }, {
+            "name": "Sandor Clegane",
+            "birthday": "11/07/1969"
+            }, {
+            "name": "Tywin Lannister",
+            "birthday": "10/12/1951"
+            }, {
+            "name": "Theon Greyjoy",
+            "birthday": "12/31/1989"
+            }, {
+            "name": "Samwell Tarly",
+            "birthday": "12/07/1990"
+            }, {
+            "name": "Joffrey Baratheon",
+            "birthday": "06/12/1992"
+            }, {
+            "name": "Catelyn Stark",
+            "birthday": "12/03/1962"
+            }, {
+            "name": "Bran Stark",
+            "birthday": "12/02/1995"
+            }, {
+            "name": "Petyr Baelish",
+            "birthday": "11/20/1974"
+            }, {
+            "name": "Robb Stark",
+            "birthday": "11/28/1986"
+            }, {
+            "name": "Brienne of Tarth",
+            "birthday": "11/27/1985"
+            }, {
+            "name": "Margaery Tyrell",
+            "birthday": "12/02/1989"
+            }, {
+            "name": "Stannis Baratheon",
+            "birthday": "09/14/1971"
+            }, {
+            "name": "Davos Seaworth",
+            "birthday": "02/13/1973"
+            }, {
+            "name": "Tormund Giantsbane",
+            "birthday": "12/14/1974"
+            }, {
+            "name": "Jeor Mormont",
+            "birthday": "11/01/1955"
+            }, {
+            "name": "Eddard Stark",
+            "birthday": "12/02/1963"
+            }, {
+            "name": "Khal Drogo",
+            "birthday": "12/05/1980"
+            }, {
+            "name": "Ramsay Bolton",
+            "birthday": "12/05/1976"
+            }, {
+            "name": "Robert Baratheon",
+            "birthday": "12/02/1965"
+            }, {
+            "name": "Daario Naharis",
+            "birthday": "12/02/1985"
+            }, {
+            "name": "Viserys Targaryen",
+            "birthday": "12/06/1984"
+            }]</textarea>
+
+            <div class="app__actions">
+              <label>Year</label>
+              <select class="js-year-input" id="ultra"  onchange="getYearValue()">
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016" selected>2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                <option value="2007">2007</option>
+                <option value="2006">2006</option>
+                <option value="2005">2005</option>
+                <option value="2004">2004</option>
+                <option value="2003">2003</option>
+                <option value="2002">2002</option>
+                <option value="2001">2001</option>
+                <option value="2000">2000</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <hr class="border-line app__border" />
+
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
